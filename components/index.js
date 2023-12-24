@@ -1,29 +1,29 @@
-import ScreenHeaderBtn from "./common/header/ScreenHeaderBtn";
+import ScreenFooterBtn from "./common/footer/ScreenFooterBtn";
 
 // home screen
 import Welcome from "./home/welcome/Welcome";
-import Nearbyjobs from "./home/nearby/Nearbyjobs";
-import Popularjobs from "./home/popular/Popularjobs";
+import Soonevents from "./home/soon/Soonevents";
+import Popularevents from "./home/popular/Popularevents";
 
 // job details screen
-import Company from "./jobdetails/company/Company";
-import { default as JobTabs } from "./jobdetails/tabs/Tabs";
-import { default as JobAbout } from "./jobdetails/about/About";
-import { default as JobFooter } from "./jobdetails/footer/Footer";
-import Specifics from "./jobdetails/specifics/Specifics";
+import User from "./eventdetails/user/User";
+import { default as EventTabs } from "./eventdetails/tabs/Tabs";
+import { default as EventAbout } from "./eventdetails/about/About";
+import { default as EventFooter } from "./eventdetails/footer/Footer";
+import Specifics from "./eventdetails/specifics/Specifics";
 
 // common
-import NearbyJobCard from "./common/cards/nearby/NearbyJobCard";
+import NearbyEventCard from "./common/cards/soon/SoonEventCard";
 
 export {
-  ScreenHeaderBtn,
+  ScreenFooterBtn,
   Welcome,
-  Nearbyjobs,
-  Popularjobs,
-  Company,
-  JobTabs,
-  JobAbout,
-  JobFooter,
+  Soonevents,
+  Popularevents,
+  User,
+  EventTabs,
+  EventAbout,
+  EventFooter,
   Specifics,
-  NearbyJobCard
+  NearbyEventCard
 };

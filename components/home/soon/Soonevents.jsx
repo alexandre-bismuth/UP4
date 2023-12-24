@@ -1,14 +1,14 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-import styles from './soonevents'
+import styles from './soonevents.style'
 
-const Nearbyjobs = () => {
+const Soonevents = () => {
   return (
     <View>
-      <Text>Nearbyjobs</Text>
+      <Text>Soonevents</Text>
     </View>
   )
 }
 
-export default Nearbyjobs
+export default Soonevents

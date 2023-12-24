@@ -3,12 +3,12 @@ import { View, Text } from 'react-native'
 
 import styles from './popularjobcard.style'
 
-const PopularJobCard = () => {
+const PopularEventCard = () => {
   return (
     <View>
-      <Text>PopularJobCard</Text>
+      <Text>PopularEventCard</Text>
     </View>
   )
 }
 
-export default PopularJobCard
+export default PopularEventCard

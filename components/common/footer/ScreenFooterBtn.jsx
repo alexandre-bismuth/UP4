@@ -3,12 +3,12 @@ import { View, Text } from 'react-native'
 
 import styles from './screenfooter.style'
 
-const ScreenHeaderBtn = () => {
+const ScreenFooterBtn = () => {
   return (
     <View>
-      <Text>ScreenHeaderBtn</Text>
+      <Text>ScreenFooterBtn</Text>
     </View>
   )
 }
 
-export default ScreenHeaderBtn
+export default ScreenFooterBtn
