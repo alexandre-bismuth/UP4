@@ -1,4 +1,5 @@
 import ScreenFooterBtn from "./common/footer/ScreenFooterBtn";
+import ScreenHeaderBtn from "./common/header/ScreenHeaderBtn";
 
 // home screen
 import Welcome from "./home/welcome/Welcome";
@@ -17,6 +18,7 @@ import NearbyEventCard from "./common/cards/soon/SoonEventCard";
 
 export {
   ScreenFooterBtn,
+  ScreenHeaderBtn,
   Welcome,
   Soonevents,
   Popularevents,

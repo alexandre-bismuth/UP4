@@ -11,17 +11,8 @@ const styles = StyleSheet.create({
     padding: SIZES.small,
     backgroundColor: "#FFF",
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: "left",
     flexDirection: "row",
-  },
-  footer: {
-    width: '100%',
-    height: '10%', 
-    position: 'absolute', 
-    bottom: 0, 
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#FFF', 
   },
   likeBtn: {
     width: 55,

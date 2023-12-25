@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { View, Text, ScrollView, SafeAreaView } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 
-import { COLORS, icons, images, SIZES } from '../constants';
+import { COLORS, icons, images, SIZES, FONT } from '../constants';
 import { 
-    Soonevents, Popularevents, ScreenFooterBtn, Welcome 
+    Soonevents, Popularevents, ScreenHeaderBtn, ScreenFooterBtn, Welcome 
 } from '../components';
 
 const Home = () => {
@@ -13,16 +13,26 @@ const Home = () => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.lightWhite }}>
       <Stack.Screen 
+        option={{headerStyle: {height: 600}}}
         options= {{
-          footerStyle: {backgroundColor: COLORS.lightWhite},
-          footerShadowVisible: false,
-          footerLeft : () => (
-            <ScreenFooterBtn iconUrl={icons.menu} dimension="60%" />
+          headerStyle: {
+            backgroundColor: COLORS.lightWhite,
+            height: 100,
+          },
+          HeaderShadowVisible: false,
+          headerLeft : () => (
+            <ScreenHeaderBtn iconUrl={images.profile} BtnDimension={40} ImgDimension = "100%" />
           ),
-          footerRight : () => (
-            <ScreenFooterBtn iconUrl={icons.profile} dimension="100%" />
+          headerRight : () => (
+            <ScreenHeaderBtn text={"Filter"} BtnDimension='auto' padding={8}/>
           ),
-          footerTitle:""
+          headerTitle: () => (
+            <View>
+              <Text style={{color: COLORS.primary, fontSize: SIZES.medium , fontFamily: FONT.bold}}>
+                What are you up for today ? 
+              </Text> 
+            </View>           
+          ),
         }}
       />
       <ScrollView showVerticalScrollIndicator={false}>

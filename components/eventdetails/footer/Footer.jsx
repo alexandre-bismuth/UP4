@@ -5,7 +5,7 @@ import styles from './footer.style'
 
 const Footer = () => {
   return (
-    <View>
+    <View style={styles.footer}>
       <Text>Footer</Text>
     </View>
   )
